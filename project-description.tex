@@ -1,0 +1,84 @@
+\documentclass[onecolumn,nocopyrightspace,preprint]{sigplanconf}
+
+\usepackage{booktabs}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage{xspace}
+\usepackage{caption}
+\usepackage[tocentry]{vhistory}
+
+% \lstset{
+%   commentstyle=\small\ttfamily, %
+%   fontadjust=true, %
+%   firstnum  ber=1, %
+%   escapeinside={(*}{*)}, %
+% }
+
+\lstset{
+  float=*,
+  numbers=none,
+  numberstyle=\footnotesize,
+  numbersep=4pt,
+  basicstyle=\small\ttfamily,
+  keywordstyle=\small\ttfamily\bf,
+  tabsize=2,
+  breaklines=true,
+  frame=lines,
+  aboveskip=\bigskipamount,
+  belowskip=\bigskipamount,
+  %belowcaptionskip=\medskipamount,
+  language=bash,
+  deletekeywords={env, for}
+}
+
+\nocaptionrule
+
+
+
+\title{Antescofo: Project Title}
+\authorinfo{
+  Martin~Aigner
+}{University of Salzburg}{firstname.lastname@cs.uni-salzburg.at}
+
+\begin{document}
+\maketitle
+%\tableofcontents
+
+\section*{Foreword} 
+Writing this report is part of the requirements of [CLASSNAME] intended to
+make students think about combining different topics of education through
+a single common property: the use of computers.
+
+Say here, that this is important because...
+
+The goal is to propose a hypothetical project.
+
+The cool thing here: this project actually actually happened.
+
+\section*{Abstract} 
+
+(Context) Our research group is involved in a research project on Antescofo, a
+real-time multimedia system, developed by IRCAM, Paris. Antescofo is a complex
+piece of software used to accompany musicians and orchestras on the stage. It
+is used at various concert halls throughout the world, including the
+Festspielhaus in Salzburg. We have recently submitted a research proposal with
+IRCAM on advancing the real-time aspects of Antescofo for embedded devices.
+
+(Internship) The task of the students within this internship is to setup, use,
+(and so performance analysis of Antescofo. Some of the challenges of Antescofo
+(are scalability, as well as proper modelling of time, topics that our
+(research group has expertise on. The students are expected to get Antescofo
+(running in a lab environment, demonstrate simple use with an actual
+(instrument, and isolate performance issues that motivate our research). This
+(internship project will be a valuable kick-off for our research on enhancing
+(the real-time aspects of Antescofo.
+
+(technical bla-bla) Assets for the students: experience working on a highly
+(sophisticated software system; get acquainted with technical issues of
+(setting up a system; experience with performance analysis and with research
+(on real-time aspects of computing; fun with music and complex software.
+
+
+\end{document}
+
+
