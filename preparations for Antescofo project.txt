@@ -1,0 +1,17 @@
+
+
+
+Studio:
+* Audiopfade
+* Signalverarbeitung
+* Mikrofon
+* einpegeln
+
+Audiosignale
+* Wellenformen, Obertöne
+* Filter (wie hört sich was an)
+* LFO auf Filter. Faltung
+Rade?
+
+PureData
+* Wir bauen einen Synthesizer

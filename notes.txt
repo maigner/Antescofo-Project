@@ -1,0 +1,10 @@
+Nachbesprechung:
+* 3 Fächer
+* Tools beschreiben
+* Stundenplan
+
+
+PureData
+* read Manual. 0.Intro
+* Task: Implmement a metronome with differnt clicking tones and configurable accents
+
