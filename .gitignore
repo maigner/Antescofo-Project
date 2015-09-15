@@ -3,4 +3,6 @@ project-description.fdb_latexmk
 project-description.log
 project-description.out
 project-description.synctex.gz
+project-description.blg
+project-description.bbl
 .DS_Store
