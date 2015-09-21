@@ -56,16 +56,21 @@ Say here, that this is important because...
 
 The goal is to propose a hypothetical project. (to learn this and that)
 
-The cool thing here: this project has actually happened. The drawback: it is no longer a hypothetical project
-and therefore, kind of, contradicts the goal of thinking about: ``How would I plan and lead that project?''
-Nevertheless, we did plan the project in advance as much as possible and clearly state any changes we have applied 
-to \textit{the plan} during the project. Still, we have improvised a lot, e.g., making up on-demand mini lectures on the fly.
-The interested reader might wonder if improvisation further contradicts the idea of planning and describing a hypothetical project. 
-We don't think so! A teachers ability to adapt to individual student's knowledge, needs, and interests is, in our opinion,
-a key quality to have in the educational business.
+The cool thing here: this project has actually happened. The drawback: it is
+no longer a hypothetical project and therefore, kind of, contradicts the goal
+of thinking about: ``How would I plan and lead that project?'' Nevertheless,
+we did plan the project in advance as much as possible and clearly state any
+changes we have applied  to \textit{the plan} during the project. Still, we
+have improvised a lot, e.g., making up on-demand mini lectures on the fly. The
+interested reader might wonder if improvisation further contradicts the idea
+of planning and describing a hypothetical project.  We don't think so! A
+teachers ability to adapt to individual student's knowledge, needs, and
+interests is, in our opinion, a key quality to have in the educational
+business.
 
-Our goal with this report is simple. We want to enable others to repeat the project under similar circumstances.
-The students achieved a great result which can be viewed at \url{https://youtu.be/a_AVsBpvBVo}
+Our goal with this report is simple. We want to enable others to repeat the
+project under similar circumstances. The students achieved a great result
+which can be viewed at \url{https://youtu.be/a_AVsBpvBVo}
 
 \section{Background of the Project} 
 
@@ -79,7 +84,7 @@ for embedded devices.
 
 Internship: The task of the students within this internship is to setup, use,
 and so performance analysis of Antescofo. Some of the challenges of Antescofo
-are scalability, as well as proper modelling of time, topics that our
+are scalability, as well as proper modeling of time, topics that our
 research group has expertise on. The students are expected to get Antescofo
 running in a lab environment, demonstrate simple use with an actual
 instrument, and isolate performance issues that motivate our research). This
@@ -92,8 +97,7 @@ setting up a system; experience with performance analysis and with research
 on real-time aspects of computing; fun with music and complex software.
 
 
-
-\section{Objectives aka Project Goals}
+\section{An Interdisciplinary Project}
 
 The goal of this report is to describe an interdisciplinary project and
 introduce software that aids the education in each discipline.  We believe
@@ -106,7 +110,7 @@ Data. Secondly, there is music education. The students need to understand what
 they write in their programs so reading and writing a musical score is a
 requirement for this project. There are plenty of software tools that aid
 musician in working with musical scores. We choose MuseScore, an open-source
-musical score editor. Thirdly and finally we have visual art. One project goal
+musical score editor. Thirdly and finally we have media art. One project goal
 is presenting the result of project, a piece of music, to an audience and
 since \textit{video killed the radio star} we produce a music video with
 iMovie that ships with OSX. There was, in fact, more software involved in the
@@ -120,9 +124,7 @@ What were your motives?
 From that we hope to cause an initial motivation of the students. During the class we did THIS AND THAT
 to keep them motivated.
 
-
-Combine computer science, art, and music.
-
+\subsection{Motivation of the Students}
 
 Making music with computers.
 
@@ -144,11 +146,31 @@ understand that it is possible to achieve the project goal. Fortunately, there
 exist a number of examples of the application of Antescofo in an artistic
 context on youtube.
 
+\section{Tasks}
 
-\section{Tools}
+This section describes the tasks we assign to the students.
+
+\subsection{Setting the project goals}
+
+We decided to let the studets decide on their own what music they wanted to use for the project.
+c.f. Hubwieser: Entscheidungssituationen schaffen
+
+
+\section{Course Material}
 %Pure Data, Antescofo, Logic, iMovie
+
+The tools and how to use them.
+
 This section gives a high level introduction to the software products
 used in this projects.
+
+Each subsection gives a high level overview of the software tool and
+also introduces teaching material required in class.
+
+Additional sources. We encourage the students to find their own answers.
+``Did you google it?''
+The students then explain their findings to the instructor and apply their
+new knowledge under supervision.
 
 \subsection{Pure Data}
 
@@ -162,6 +184,15 @@ equipment. Pd is suitable for learning basic multimedia processing and
 visual programming methods as well as for realizing complex systems for
 large-scale projects.''~\cite{website:puredata}
 
+Material: online help browser
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.4]{fig/pd-help-browser.png}
+    \caption{Pure Data Help Browser}
+    \label{fig:pd-help-browser}
+\end{figure}
+
 
 \subsection{Antescofo}
 
@@ -173,21 +204,37 @@ instrumental performance with computer realized elements. The synchronous
 language within Antescofo allows flexible writing of time and interaction in
 computer music.''~\cite{website:antescofo}
 
-\subsection{Logic}
+Material: technical documentation, demo patch, alle meine events
+Source for specific answers: the web, Antescofo user group
+
+\subsection{Logic Pro}
+
+Logic Pro~\cite{website:logic} is a professional MIDI and audio recoding
+software for OSX. It supports all features required for the project, i.e.,
+processing multiple audio tracks together with real-time MIDI instruments for
+synthesizing sounds while playing with Antescofo and recording the piece in
+high quality.  Note that there are many similar tools, including free and open
+source software, that would do the trick. Nevertheless, we choose Logic Pro
+for one reason. One of the students had prior knowledge with Logic Pro.
+
+
+Material: examples of multi-track multi-instrument projects showing
+the non-linear production process of software sequencers. Once you know
+the work flow of multi-track audio production, all tools suddenly look similar.
+Source for specific answers: the web
 
 \subsection{iMovie}
 
-
-\section{Tasks}
-
-This section describes the tasks we assign to the students.
+Material: 
+Source for specific answers: the web
 
 
-\subsection{Setting the project goals}
+Note that similar to Logic Pro, there are plenty of alternative software
+tools to do the job. Again, one student had prior knowledge in working
+with iMovie. 
 
-We decided to let the studets decide on their own what music they wanted to use for the project.
-c.f. Hubwieser: Entscheidungssituationen schaffen
 
+\section{Description of the Tasks}
 
 \subsection{Setting up the team}
 
@@ -220,12 +267,7 @@ A Pure Data application is called a patch. A patch has a graphical Pure Data win
     \label{fig:pd-test}
 \end{figure}
 
-\begin{figure}[ht]
-    \centering
-    \includegraphics[scale=0.4]{fig/pd-help-browser.png}
-    \caption{Pure Data Help Browser}
-    \label{fig:pd-help-browser}
-\end{figure}
+
 
 \subsection{Implement your first Pure Data Patch}
 
