@@ -224,9 +224,9 @@ instruments.
 
 \section{Project Details}\label{sec:objectives}
 
-
-
-This section describes the tasks we assign to the students.
+This section describes the objectives of the project and the material we
+provide for the students to acquire the required skills. The students learn by
+example and finding their own answers to specific tasks and questions.
 
 \subsection{Objectives}
 
@@ -283,30 +283,133 @@ during this project.
 
 \end{description}
 
-
-How to get music into the computer?
-
-Signal processing and analogue-digital conversion.
-
-What types of signals do occur? data streams vs. control sequences
-
-Signal routing in hard and software.
-
-Basics of capturing sounds with microphones and mixing.
+One last objective remains: the piece of music that will be performed in the
+end. This objective is set by the students. In our case the students wanted to
+perform the song ``Bad Romance'' by Lady Gaga. This was not planned in
+advance, but emerged while the initial playing phase with Antescofo. The
+students decided to have a singer as soloist and the singer chose that song
+because of prior experience with the material.
 
 
 
-We decided to let the students decide on their own what music they wanted to use for the project.
-c.f. Hubwieser: Entscheidungssituationen schaffen
+\subsection{Course Material}\label{sec:material}
 
 
-\subsection{Refinement of Objectives}
+This section lists the material that aids learning the required skills listed above.
 
-Refine from abstract vision to concrete manageable tasks.
+\begin{description}
+
+\item[Playing music:] We provide a lead sheet of ``Bad Romance''. The teacher
+makes sure that the students understand the song structure and the cord progression
+to make the computer accompany the song. 
+
+\item[Getting music in the computer:] We provide a short lecture on the basics
+of analogue/digital conversion (ADC). We discuss advantages and disadvantages
+on a conceptual language. It is not necessary to know implementation details
+of ADCs but it is important to understand where and why it is applied in the
+signal processing chain.
+
+\item[The physics of sound:] x
+
+\item[Synthetic instruments:] y
+
+\item[Programming Antescofo:] Antescofo is implemented in Pure Data. To interact with
+Antescofo, the students need to learn basics of Pure Data first.
+
+``Pure Data (aka Pd) is an open source visual programming language. Pd enables
+musicians, visual artists, performers, researchers, and developers to create
+software graphically, without writing lines of code. Pd is used to process
+and generate sound, video, 2D/3D graphics, and interface sensors, input
+devices, and MIDI. Pd can easily work over local and remote networks to
+integrate wearable technology, motor systems, lighting rigs, and other
+equipment. Pd is suitable for learning basic multimedia processing and
+visual programming methods as well as for realizing complex systems for
+large-scale projects.''~\cite{website:puredata}
+
+\begin{figure}[t]
+    \centering
+    \includegraphics[scale=0.4]{fig/pd-help-browser.png}
+    \caption{Pure Data Help Browser}
+    \label{fig:pd-help-browser}
+\end{figure}
+
+We point the students to the online help browser of Pure Data, illustrated in
+Figure~\ref{fig:pd-help-browser}, and demonstrate its application. The help
+browser is made up of Pure Data programs, called patches, that allow immediate
+interaction with the programming examples.
+
+``Antescofo is a modular polyphonic Score Following system as well as a
+Synchronous Programming language for musical composition. The module allows
+for automatic recognition of music score position and tempo from a realtime
+audio Stream coming from performer(s), making it possible to synchronize an
+instrumental performance with computer realized elements. The synchronous
+language within Antescofo allows flexible writing of time and interaction in
+computer music.''~\cite{website:antescofo}
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.5]{fig/ascohelp.png}
+    \caption{Antescofo Help Patch}
+    \label{fig:ascohelp}
+\end{figure}
+
+Additional material we provide include the official technical documentation,
+demo patches prepared by the instructor, asking questions in the Antescofo
+user group, and backward-engineering under supervision, i.e., students take a
+look at the Antescofo demo programs as shown in Figure~\ref{fig:ascohelp} and
+explain what they discover to the teacher.
 
 
-\section{Course Material}\label{sec:material}
-%Pure Data, Antescofo, Logic, iMovie
+\item[Working with an analogue mixing console:] We provide a simple 12-track
+analogue Mixing console and its manual. Based on its block schematic we
+explain the signal flow inside a mixer and point the students to application
+examples in the manual. The students need to find out which of the application
+examples fits the requirement of the project and how to set up the console
+accordingly under supervision. Unfortunately, copyright limitations do not
+allow for inclusion of the block schematics in this report. See the website of
+any manufacturer of mixing consoles, e.g., mackie.com, for manuals, use cases,
+and applications.
+
+\item[Working with a digital audio workstation:] For acquiring this skill it
+is important to understand analogue mixing and routing first because most
+digital audio workstations emulate hardware consoles in look and feel. Once
+the students find themselves familiar with a hardware mixer and recording
+equipment, they will have no issues repeating the same steps in software. For
+our project, we use Logic Pro~\cite{website:logic}, which is a professional
+MIDI and audio recoding software for OSX. It supports all features required
+for the project, i.e., processing multiple audio tracks together with real-
+time MIDI instruments for synthesizing sounds while playing with Antescofo and
+recording the piece in high quality.  Note that there are many similar tools,
+including free and open source software, that would do the trick.
+Nevertheless, we choose Logic Pro for one reason. One of the students had
+prior knowledge with Logic Pro. Additional material we provide include
+examples of multi-track multi- instrument projects showing the non-linear
+production process of software sequencers. Once the students learn the work
+flow of multi-track audio production, all tools suddenly look similar.
+
+\item[Making a music video:] Similar to the choice of Logic Pro, there are
+plenty of alternative software tools to do the job. Again, one student had
+prior knowledge in working with iMovie.
+
+``iMovie is a video editing software application sold by Apple Inc. for the Mac
+and iOS. It was originally released in 1999. ... From 2003, iMovie is included
+free with all new Mac computers. iMovie imports video footage to the Mac using
+either the FireWire interface on most MiniDV format digital video cameras or
+the computer's USB port. It can also import video and photo files from a hard
+drive. From there, the user can edit the photos and video clips and add
+titles, themes, music, and effects, including basic color correction and video
+enhancement tools and transitions such as fades and slides. There are
+currently hundreds of iMovie video tutorials online.''~\cite{website:imovie}
+
+The students prior knowledge was sufficient to achieve simple results with
+iMovie. Only few questions had to be covered by the instructor.
+
+\end{description}
+
+
+
+\subsection{Teaching style}
+
 
 Teaching Art~\cite{book:Peez2008}
 
@@ -328,94 +431,14 @@ The students then explain their findings to the instructor and apply their
 new knowledge under supervision.
 
 
-\subsection{Teaching style}
 group based, individual, democratic. Cite the proper classifications~\cite{book:Hubwieser2007}
 
 
+\section{Time table}
 
-\subsection{Tools}
-
-\subsubsection{Pure Data}
-
-``Pure Data (aka Pd) is an open source visual programming language. Pd enables
-musicians, visual artists, performers, researchers, and developers to create
-software graphically, without writing lines of code. Pd is used to process
-and generate sound, video, 2D/3D graphics, and interface sensors, input
-devices, and MIDI. Pd can easily work over local and remote networks to
-integrate wearable technology, motor systems, lighting rigs, and other
-equipment. Pd is suitable for learning basic multimedia processing and
-visual programming methods as well as for realizing complex systems for
-large-scale projects.''~\cite{website:puredata}
-
-Material: online help browser
-
-\begin{figure}[ht]
-    \centering
-    \includegraphics[scale=0.4]{fig/pd-help-browser.png}
-    \caption{Pure Data Help Browser}
-    \label{fig:pd-help-browser}
-\end{figure}
-
-
-\subsubsection{Antescofo}
-
-``Antescofo is a modular polyphonic Score Following system as well as a
-Synchronous Programming language for musical composition. The module allows
-for automatic recognition of music score position and tempo from a realtime
-audio Stream coming from performer(s), making it possible to synchronize an
-instrumental performance with computer realized elements. The synchronous
-language within Antescofo allows flexible writing of time and interaction in
-computer music.''~\cite{website:antescofo}
-
-Material: technical documentation, demo patch, alle meine events
-Source for specific answers: the web, Antescofo user group
-
-\subsubsection{Logic Pro}
-
-Logic Pro~\cite{website:logic} is a professional MIDI and audio recoding
-software for OSX. It supports all features required for the project, i.e.,
-processing multiple audio tracks together with real-time MIDI instruments for
-synthesizing sounds while playing with Antescofo and recording the piece in
-high quality.  Note that there are many similar tools, including free and open
-source software, that would do the trick. Nevertheless, we choose Logic Pro
-for one reason. One of the students had prior knowledge with Logic Pro.
-
-
-Material: examples of multi-track multi-instrument projects showing
-the non-linear production process of software sequencers. Once you know
-the work flow of multi-track audio production, all tools suddenly look similar.
-Source for specific answers: the web
-
-\subsubsection{iMovie}
-
-Material: 
-Source for specific answers: the web
-
-
-Note that similar to Logic Pro, there are plenty of alternative software
-tools to do the job. Again, one student had prior knowledge in working
-with iMovie. 
-
-
-``iMovie is a video editing software application sold by Apple Inc. for the Mac
-and iOS. It was originally released in 1999. ... From 2003, iMovie is included
-free with all new Mac computers. iMovie imports video footage to the Mac using
-either the FireWire interface on most MiniDV format digital video cameras or
-the computer's USB port. It can also import video and photo files from a hard
-drive. From there, the user can edit the photos and video clips and add
-titles, themes, music, and effects, including basic color correction and video
-enhancement tools and transitions such as fades and slides. There are
-currently hundreds of iMovie video tutorials online.''~\cite{website:imovie}
-
-
-
-\section{Description of the Tasks}
-
-\subsection{Setting up the team}
-
-Making the students getting to know each other. First Task: ``Talk about music!''
 
 \subsection{Getting started with Pure Data}
+
 
 %using the help browser. add screen shot. give example
 
@@ -426,21 +449,6 @@ on the Pure Data website and are not repeated here\footnote{https://puredata.inf
 A Pure Data application is called a patch. A patch has a graphical Pure Data window
 
 
-
-\begin{figure}[ht]
-    \centering
-    \includegraphics[scale=0.4]{fig/pd-audio.png}
-    \caption{Pure Data Audio Settings}
-    \label{fig:pd-audio}
-\end{figure}
-
-
-\begin{figure}[ht]
-    \centering
-    \includegraphics[scale=0.4]{fig/pd-test.png}
-    \caption{Pure Data Audio Test Patch}
-    \label{fig:pd-test}
-\end{figure}
 
 
 
